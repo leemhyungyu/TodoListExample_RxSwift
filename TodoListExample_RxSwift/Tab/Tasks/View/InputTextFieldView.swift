@@ -25,7 +25,7 @@ class InputTextFieldView: UIView {
         return textField
     }()
     
-    var todayButton: UIButton = {
+    lazy var todayButton: UIButton = {
         let button = UIButton()
         
         var config = UIButton.Configuration.plain()
@@ -37,6 +37,8 @@ class InputTextFieldView: UIView {
         
         button.configuration = config
         button.titleLabel?.font = .systemFont(ofSize: 15)
+        
+        button.addTarget(self, action: #selector(todayButtonClicked(_:)), for: .touchUpInside)
         
         return button
     }()
@@ -63,6 +65,11 @@ class InputTextFieldView: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    @objc func todayButtonClicked(_ sender: UIGestureRecognizer) {
+        todayButton.isSelected = !todayButton.isSelected
+
+    }
 }
 
 
@@ -82,7 +89,7 @@ extension InputTextFieldView {
         }
         
         todayButton.snp.makeConstraints {
-            $0.width.equalTo(100)
+            $0.width.equalTo(80)
             $0.height.equalTo(35)
             $0.trailing.equalTo(addButton.snp.leading).inset(10)
             $0.centerY.equalToSuperview()

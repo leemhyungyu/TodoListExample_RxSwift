@@ -10,6 +10,8 @@
 		2C1D9790292283B60054DD28 /* TodoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1D978F292283B60054DD28 /* TodoCell.swift */; };
 		2C1D9792292283E90054DD28 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1D9791292283E90054DD28 /* TaskViewModel.swift */; };
 		2C1D97942922913D0054DD28 /* TodoHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1D97932922913D0054DD28 /* TodoHeaderView.swift */; };
+		2C1D97972923D2250054DD28 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1D97962923D2250054DD28 /* Todo.swift */; };
+		2C1D979A2923D29A0054DD28 /* TodoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1D97992923D2990054DD28 /* TodoManager.swift */; };
 		2C969F99292272C4005D8564 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C969F98292272C4005D8564 /* TaskViewController.swift */; };
 		2C969F9B292272E9005D8564 /* AppTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C969F9A292272E9005D8564 /* AppTabBarController.swift */; };
 		2C969F9D292274CD005D8564 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C969F9C292274CD005D8564 /* SettingViewController.swift */; };
@@ -47,6 +49,8 @@
 		2C1D978F292283B60054DD28 /* TodoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCell.swift; sourceTree = "<group>"; };
 		2C1D9791292283E90054DD28 /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
 		2C1D97932922913D0054DD28 /* TodoHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoHeaderView.swift; sourceTree = "<group>"; };
+		2C1D97962923D2250054DD28 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		2C1D97992923D2990054DD28 /* TodoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoManager.swift; sourceTree = "<group>"; };
 		2C969F98292272C4005D8564 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 		2C969F9A292272E9005D8564 /* AppTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarController.swift; sourceTree = "<group>"; };
 		2C969F9C292274CD005D8564 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +97,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C1D97952923D21D0054DD28 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2C1D97962923D2250054DD28 /* Todo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2C1D97982923D28A0054DD28 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				2C1D97992923D2990054DD28 /* TodoManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		2C969F9429227298005D8564 /* Tab */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +126,8 @@
 		2C969F952922729F005D8564 /* Tasks */ = {
 			isa = PBXGroup;
 			children = (
+				2C1D97982923D28A0054DD28 /* Manager */,
+				2C1D97952923D21D0054DD28 /* Model */,
 				2C969FA129228040005D8564 /* ViewModel */,
 				2C969F9E29227717005D8564 /* View */,
 				2C969F97292272B1005D8564 /* ViewController */,
@@ -391,6 +413,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C1D97972923D2250054DD28 /* Todo.swift in Sources */,
+				2C1D979A2923D29A0054DD28 /* TodoManager.swift in Sources */,
 				2C969FA029227727005D8564 /* InputTextFieldView.swift in Sources */,
 				2CC5804C29195176004A5358 /* TodoListExample_RxSwift.xcdatamodeld in Sources */,
 				2C969F99292272C4005D8564 /* TaskViewController.swift in Sources */,
